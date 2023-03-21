@@ -4,12 +4,12 @@
 }
 
 .logo {
-    width: 12%;
-    padding: 1%;
+    width: 10%;
+    padding: 20px;
     text-align: center;
 }
 
-nav {
+/*nav {
     width: 73%;
     padding: 30px;
     text-align: right;
@@ -21,12 +21,65 @@ ul {
     display: inline-block;
 }
 
-nav li {
+nav ul li {
     display: inline;
+    position: relative;
     padding: 10px;
     font-family: 'Open Sans', 'sans serif';
     font-size: 20px;
+    transition: 0.3s linear;
 }
+
+nav ul li:hover {background: lightblue}*/
+
+nav {
+    background: white;
+    text-align: right;
+}
+
+nav ul {
+    font-size: 20px;
+    font-family: 'Open Sans', 'sans-serif';
+    margin: 10px;
+    padding: 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    display: block;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.3s linear;
+}
+
+nav ul li:hover {background: #ffe900;}
+
+nav ul li ul {
+    border-bottom: 5px solid darkgrey;
+    display: none;
+    position: absolute;
+    width: 250px;
+}
+
+nav ul li ul li {
+    border-top: 3px solid darkgrey;
+    display: block;
+}
+
+nav ul li ul li:first-child {border-top: none;}
+
+nav ul li ul li a {
+    background: white;
+    display: block;
+    padding: 10px 12px;
+}
+
+nav ul li ul li a:hover {background: #ffe900;}
 
 .heroimg {
     height: 600px;
